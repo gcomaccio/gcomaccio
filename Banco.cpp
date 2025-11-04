@@ -37,6 +37,7 @@ struct Cliente { // STRUCT é como se fosse um componente que guarda muitas info
     double saque;
     double saldo;
     char agencia[4];
+    double pix;
 
 };
 // As estruturas acimas devem ser posicionadas estratégicamente para serem lidas em ordem
@@ -55,11 +56,12 @@ int main() {
         printf("\n \n  1-CADASTRAR MINHA CONTA");
         printf("\n \n  2-CONSULTAR MEUS DADOS");
         printf("\n \n  3-CONSULTAR SALDO");
-        printf("\n \n  4- EXECUTAR DEPOSITO");
-        printf("\n \n  5- EXECUTAR SAQUE");
-        printf("\n \n  6- EXIBIR EXTRATO DE OPERACOES");
-        printf("\n \n  7-ENCERRAR MINHA CONTA EXISTENTE");
-        printf("\n \n  8- SAIR");
+        printf("\n \n  4-TRANSFERENCIA PIX");
+        printf("\n \n  5- EXECUTAR DEPOSITO");
+        printf("\n \n  6- EXECUTAR SAQUE");
+        printf("\n \n  7- EXIBIR EXTRATO DE OPERACOES");
+        printf("\n \n  8-ENCERRAR MINHA CONTA EXISTENTE");
+        printf("\n \n  9- SAIR");
         printf("\n \n OPCAO: ");
         scanf("%d", &op);
         //Limpeza de espaço
@@ -105,7 +107,6 @@ int main() {
                 printf("\n Digite Seu CEP:\n");
                 fgets(endereco.cep,sizeof(endereco.cep),stdin);
 
-
                 printf("\n Digite Sua rua:\n");
                 fgets(endereco.rua,sizeof(endereco.rua),stdin);
 
@@ -123,6 +124,8 @@ int main() {
 
                 printf("\n Digite Seu Estado:\n");
                 fgets(endereco.estado,sizeof(endereco.estado),stdin);
+                
+        		
 
 
 
